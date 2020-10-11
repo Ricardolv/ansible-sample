@@ -1,0 +1,4 @@
+- Primeiro arquivo a ser criado e o hosts, arquivo de inventario
+
+ansible wordpress -u vagrant --private-key .vagrant/machines/wordpress/virtualbox/private_key -i hosts -m shell -a 'echo helo, word'
+ansible -vvvv wordpress -u vagrant --private-key .vagrant/machines/wordpress/virtualbox/private_key -i hosts -m shell -a 'echo helo, word'
